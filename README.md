@@ -2,6 +2,8 @@
 This App demonstrates a problem with WPF apps using a custom window chrome when running via RemoteApp. Under certain circumstances described below,
 the window disappears from the client machine when the title of the window is altered.
 ## Steps to reproduce:
+- Deploy the demo application as RemoteApp (tested with Windows Server 2016, Windows 10 as client)
+- Start the application
 - Start a long running operation ("Do work" button)
 - While that process is running, `<Alt>+<Tab>` out of the remote app 
 - Immediately use `<Alt>+<Tab>` to switch back to the remote app again
